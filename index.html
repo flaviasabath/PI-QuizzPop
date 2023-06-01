@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Topzera</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icones FontAweome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- startando botão Quiz --> 
+    <div class="start_btn"><button>Iniciar</button></div>
+
+    <!-- Box de infos -->
+    <div class="info_box">
+        <div class="info-title"><span>Informações</span></div>
+        <div class="info-list">
+            <div class="info">Eai jovem! Aqui vamos passar algumas informações básicas para que não tenha problemas durante o jogo, beleza?</div>
+            <div class="info">1. O quiz terá 11 perguntas</div>
+            <div class="info">2. As perguntas porderão ser relacionadas a filmes e séries</div>
+            <div class="info">3. Tenha certeza ao selecionar a resposta, pois não poderá alterará-la.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Sair</button>
+            <button class="restart">Continuar</button>
+        </div>
+    </div>
+
+    <!-- box do Quiz id no header get element by id url caminho da imagem no css -->
+   
+    <div class="quiz_box">
+        <header>
+            <div id='imageQuestion'>
+                
+            </div>
+        </header>
+
+        <section>
+            <div class="que_text">
+                <!-- pergunta do js -->
+            </div>
+            <div class="option_list">
+                <!-- opções do js -->
+            </div>
+        </section>
+
+        <footer>
+            <div class="total_que">
+                <!-- aqui vai vir a contagem do js -->
+            </div>
+            <button class="next_btn">Próxima pergunta</button>
+        </footer>
+    </div>
+
+    <!-- Box de resultado -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Você completou o quiz!</div>
+        <div class="score_text">
+            <!-- aqui vem o resultado do js -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
